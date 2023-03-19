@@ -10,27 +10,27 @@ public class NotificationTask {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
-    private Long id;
+    private long id;
     @Column(name = "chat_id", nullable = false)
-    private Long chatId;
+    private long chatId;
     @Column(name = "message", nullable = false)
     private String message;
     @Column(name = "date_time_send", nullable = false)
     private LocalDateTime dateTimeSend;
 
-    public Long getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(long id) {
         this.id = id;
     }
 
-    public Long getChatId() {
+    public long getChatId() {
         return chatId;
     }
 
-    public void setChatId(Long chatId) {
+    public void setChatId(long chatId) {
         this.chatId = chatId;
     }
 
